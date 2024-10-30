@@ -12,9 +12,18 @@ body{
     background-color: hsl(202, 86%, 94%);
 }
 
-.card h3{
-    color:hsl(202, 55%, 16%);
-}
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;      
+    }
+
+  
+
+    .inline-fields {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
 
 /*  Styling of Card */
 .card{
@@ -22,7 +31,6 @@ body{
     background-color:hsl(0, 0%, 100%);
     border-radius: 1rem;
 }
-
 
 
 /* Styling of Form Section */
@@ -41,6 +49,10 @@ body{
 }
 
 /* Styling of Card Heading*/
+.card h3{
+    color:hsl(202, 55%, 16%);
+}
+
 .heading{
     display: flex;
     justify-content: space-between;
