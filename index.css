@@ -48,6 +48,65 @@ body{
     width: 25rem;
 }
 
+.clear-all-btn{
+    text-decoration: underline;
+}
+
+/*  Styling of Form input*/
+.input-container{
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    width: 100%;
+    border-radius: .5rem;    
+    box-sizing: border-box;
+    border: 1px solid  hsl(203, 41%, 72%);
+}
+.input-container .symbol{
+    padding: .5rem;
+    border-top-right-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    color: hsl(200, 26%, 54%);
+    font-weight: 700;
+    
+}
+
+.input-container input[type="number"] {
+    border: none;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.inline-fields {
+    display: flex;
+    gap: 1rem; /* Adjust spacing as needed */
+  }
+  
+  .inline-fields div {
+    flex: 1; /* Ensures each field takes equal width */
+  }
+
+  fieldset{
+    width: 100%;
+    font-weight: 700;
+    border-radius: .5rem;
+  }
+
+  fieldset input[type="radio"]{
+    margin-right: 2rem;
+    height: 1rem;
+    width: 1rem;
+    accent-color: hsl(61, 70%, 52%);
+  }
+
+  fieldset:hover, fieldset:focus{
+    background-color: hsl(61, 100%, 77%);
+    border: 1px solid hsl(61, 70%, 52%);
+  }
+  
+  fieldset label{
+    color: hsl(202, 55%, 16%);
+  }
+  
 /*  Styling of Button */
 .calculate-repayment-btn{
     color:hsl(202, 55%, 16%);
@@ -59,6 +118,10 @@ body{
     justify-content: center;
     background-color:  hsl(61, 70%, 52%);
     border: none;
+}
+
+.calculate-repayment-btn:hover{
+    border: 1px solid hsl(202, 55%, 16%);
 }
 
 /* Styling of Result Section*/
