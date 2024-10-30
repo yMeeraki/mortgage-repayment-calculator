@@ -12,15 +12,15 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { text-align: center; }
+    .attribution a {text-decoration: none; }
   </style>
 </head>
 <body>
 
   <main class = "card">
-    <section class = "form-section">
-      <form>
+    <section>
+      <form class ="form-section">
         <div class = "heading">
           <h3>Mortgage Calculator</h3>
           <p type="button">Clear All</p>
@@ -52,10 +52,10 @@
       </form>
     </section>
   
-    <section id = "result-section">
+    <section>
       <!-- Empty results start -->
   
-      <div id="empty-result">
+      <div id="empty-result" class="result empty">
         <img src="./assets/images/illustration-empty.svg" alt="illustration-empty">
         <h3>Results shown here</h3>
   
@@ -67,7 +67,7 @@
   
       <!-- Completed results start -->
   
-      <div id = "completed-result">
+      <div id = "completed-result" class="result completed">
         Your results
   
         Your results are shown below based on the information you provided. 
