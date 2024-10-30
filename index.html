@@ -16,46 +16,69 @@
 </head>
 <body>
 
-  Mortgage Calculator
-  Clear All
+  <main class = "card">
+    <section class = "form-section">
+      <form>
+        <div class = "heading">
+          <p>Mortgage Calculator</p>
+          <p type="button">Clear All</p>
+        </div>
+      
+        <label for="mortgage-amount">Mortgage Amount</label>
+        <input type="number" id="mortgage-amount" required>
 
-  Mortgage Amount
+        <label for="mortgage-term">Mortgage Term</label>
+        <input type="number" id="mortgage-term" required>
+        
+        <label for="interest-rate">Interest Rate</label>
+        <input type="number" id="interest-rate" required>
+        
+        <p>Mortgage Type</p>
+        
+        <input type="radio" id="repayment" name="mortgage-type">
+        <label for="repayment">Repayment</label>
 
-  Mortgage Term
+        <input type="radio" id="interest-only" name="mortgage-type">
+        <label for="interest-only">Interest Only</label>
 
-  Interest Rate
+            
+        <button type="submit" class="calculate-repayment-btn">Calculate Repayments</button>
 
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
-
-  <!-- Empty results start -->
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
+      </form>
+    </section>
   
-  <div class="attribution">
+    <section id = "result-section">
+      <!-- Empty results start -->
+  
+      <div id="empty-result">
+        Results shown here
+  
+        Complete the form and click “calculate repayments” to see what 
+        your monthly repayments would be.
+      </div>
+  
+      <!-- Empty results end -->
+  
+      <!-- Completed results start -->
+  
+      <div id = "completed-result">
+        Your results
+  
+        Your results are shown below based on the information you provided. 
+        To adjust the results, edit the form and click “calculate repayments” again.
+      
+        Your monthly repayments
+      
+        Total you'll repay over the term
+      </div>
+  
+      <!-- Completed results end -->
+    </section>
+  </main>
+  
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Yukti Gupta</a>.
+  </footer>
 </body>
 </html>
