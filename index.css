@@ -1,6 +1,6 @@
 *{
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: hsl(200, 26%, 54%);
+    
 }
 
 body{
@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 26%, 54%);
 }
 
 @media (max-width: 768px) {
@@ -30,6 +31,7 @@ body{
     display: flex;
     background-color:hsl(0, 0%, 100%);
     border-radius: 1rem;
+    max-width: 60rem;
 }
 
 
@@ -40,7 +42,7 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: flex-start;
-    
+    color:hsl(200, 24%, 40%);
     background-color:hsl(0, 0%, 100%);
     width: 30rem;
     padding: 2rem;
@@ -62,6 +64,7 @@ body{
 
 .clear-all-btn{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /*  Styling of Form input*/
@@ -72,7 +75,13 @@ body{
     border-radius: .5rem;    
     box-sizing: border-box;
     border: 1px solid  hsl(203, 41%, 72%);
+    
 }
+
+.input-container:hover{
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
 .input-container .symbol{
     padding: .5rem;
     border-top-right-radius: .1rem;
@@ -81,6 +90,8 @@ body{
     font-weight: 700;
     
 }
+
+
 
 .input-container input[type="number"] {
     border: none;
@@ -113,6 +124,7 @@ body{
   fieldset:hover, fieldset:focus{
     background-color: hsl(61, 100%, 77%);
     border: 1px solid hsl(61, 70%, 52%);
+    cursor: pointer;
   }
   
   fieldset label{
@@ -130,6 +142,7 @@ body{
     justify-content: center;
     background-color:  hsl(61, 70%, 52%);
     border: none;
+    cursor: pointer;
 }
 
 .calculate-repayment-btn:hover{
@@ -155,14 +168,14 @@ body{
 }
 
 .empty{
-    display: none;
+    
     justify-content: center;
     align-items: center;
     
 }
 
 .completed{
-    display: flex;
+    display: none;
 }
 
 /*   Styling of Answer*/
