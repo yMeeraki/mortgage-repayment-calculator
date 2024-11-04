@@ -26,17 +26,17 @@
           <p type="button" id="clear-all-btn" class="clear-all-btn">Clear All</p>
         </div>
       
-        <label for="mortgage-amount">Mortgage Amount</label>
+        <label for="mortgage-principal">Mortgage Amount</label>
         <div class="input-container">
           <span class="symbol">€</span>
-          <input type="number" id="mortgage-amount" required>
+          <input type="number" id="mortgage-principal" step="0.01" required>
         </div>
 
         <div class="inline-fields">
           <div>
             <label for="mortgage-term">Mortgage Term</label>
             <div class="input-container">
-              <input type="number" id="mortgage-term" required>
+              <input type="number" id="mortgage-term" step="0.01" required>
               <span class="symbol">years</span>
             </div>
           </div>
@@ -44,7 +44,7 @@
           <div>
             <label for="interest-rate">Interest Rate</label>
             <div class="input-container">
-              <input type="number" id="interest-rate" required>
+              <input type="number" id="interest-rate" step="0.01" required>
               <span class="symbol">%</span>
             </div>
           </div>
@@ -64,7 +64,7 @@
         </fieldset>
 
             
-        <button type="submit" class="calculate-repayment-btn">
+        <button type="button" class="calculate-repayment-btn" id = "calculate-repayment-btn">
           <i><img src="./assets/images/icon-calculator.svg" alt="icon-calculator"></i>
           Calculate Repayments
         </button>
@@ -96,19 +96,21 @@
         </p>
       
         <div class="answer">
-          Your monthly repayments
+          <p>Your monthly repayments</p>
 
-          <h1 id="monthly-repayment">2323</h1>
+          <h1 id="monthly-repayment"></h1>
 
          <hr> 
         
-          Total you'll repay over the term
-          <h3 id="total">232</h3>
+          <p>Total you'll repay over the term</p>
+          <h3 id="total-repayments"></h3>
 
         </div>
       </div>
   
       <!-- Completed results end -->
+
+      
     
   </main>
   
@@ -116,5 +118,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Yukti Gupta</a>.
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
