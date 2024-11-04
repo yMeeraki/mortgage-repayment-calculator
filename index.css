@@ -97,6 +97,7 @@ body{
     border: none;
     width: 100%;
     border-radius: .5rem;
+    padding:.5rem;
 }
 
 .inline-fields {
